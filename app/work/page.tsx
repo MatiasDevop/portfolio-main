@@ -8,9 +8,12 @@ import {
 } from "@/components/ui/tooltip";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { useState } from "react";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
-import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import Image from "next/image";
 
 const projects = [
   {
@@ -50,6 +53,14 @@ const projects = [
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
+
+  const handleSlideChange = (swiper: any) => {
+    // get current slide index
+    const currentIndex = swiper.activeIndex;
+    // update project state based on current slide index
+    setProject(projects[currentIndex]);
+  };
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -121,11 +132,27 @@ const Work = () => {
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
-              className="xl:h-[520] mb-12"
+              className="xl:h-[520px] mb-12"
               onSlideChange={handleSlideChange}
             >
               {projects.map((project, index) => {
-                return <SwiperSlide key={index}>slide {index}</SwiperSlide>;
+                return (
+                  <SwiperSlide key={index} className="w-full">
+                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                      {/* overlay */}
+                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10 "></div>
+                      {/* image */}
+                      <div className="relative w-full h-full">
+                        <Image
+                          src={project.image}
+                          fill
+                          className="object-cover"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                );
               })}
             </Swiper>
           </div>
