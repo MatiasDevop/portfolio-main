@@ -14,6 +14,7 @@ import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 
 import "swiper/css";
 import Image from "next/image";
+import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const projects = [
   {
@@ -154,6 +155,8 @@ const Work = () => {
                   </SwiperSlide>
                 );
               })}
+              {/* slider buttons */}
+              <WorkSliderBtns />
             </Swiper>
           </div>
         </div>
