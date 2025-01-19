@@ -2,7 +2,13 @@
 
 import { usePathname } from "next/navigation";
 import React from "react";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetTitle,
+  SheetTrigger,
+} from "./ui/sheet";
 import { CiMenuFries } from "react-icons/ci";
 import Link from "next/link";
 
@@ -31,6 +37,7 @@ const links = [
 
 const MobileNav = () => {
   const pathname = usePathname();
+  console.log("path///////", pathname);
 
   return (
     <Sheet>
@@ -39,6 +46,8 @@ const MobileNav = () => {
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         {/* logo */}
+        <SheetTitle></SheetTitle>
+        <SheetDescription></SheetDescription>
         <div className="mt-32 mb-40 text-center text-2xl">
           <Link href="/">
             <h1 className="text-4xl font-semibold">
