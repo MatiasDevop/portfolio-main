@@ -20,15 +20,15 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
+          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-exclusion absolute rounded-full"
         >
           <Image
-            src="/assets/sphoto.png"
+            src="/assets/image-mat.jpg"
             priority
             quality={100}
             fill
             alt=""
-            className="object-contain"
+            className="rounded-full object-cover"
           />
         </motion.div>
         {/* circle */}
