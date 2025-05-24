@@ -7,30 +7,30 @@ import { BsArrowDownRight } from "react-icons/bs";
 const services = [
   {
     num: "01",
-    title: "Web development",
+    title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ptates at cupiditate! Magni!",
+      "Experienced Full Stack Developer with 4+ years building robust web applications using .NET for backend and Angular/React for frontend. Skilled in designing scalable solutions and delivering high-quality code.",
     href: "",
   },
   {
     num: "02",
     title: "UI/UX Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ptates at cupiditate! Magni!",
+      "Focused on creating intuitive and engaging user interfaces. I collaborate closely with teams to ensure seamless user experiences, leveraging modern frameworks and best practices.",
     href: "",
   },
   {
     num: "03",
-    title: "Logo Design",
+    title: "Cloud & DevOps",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ptates at cupiditate! Magni!",
+      "Deploying and managing applications on AWS and Azure. Experienced with CI/CD pipelines, cloud services, and infrastructure as code to ensure reliability and scalability.",
     href: "",
   },
   {
     num: "04",
-    title: "SEO",
+    title: "Team Collaboration",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ptates at cupiditate! Magni!",
+      "Strong background in Agile environments, using Jira for project management and effective teamwork. I thrive in collaborative settings, contributing to successful project delivery.",
     href: "",
   },
 ];

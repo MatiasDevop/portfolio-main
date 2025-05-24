@@ -3,10 +3,13 @@ import path from "path";
 import { FaGithub, FaLinkedinIn, FaYoutube, FaTwitter } from "react-icons/fa";
 
 const socials = [
-  { icon: <FaGithub />, path: "" },
-  { icon: <FaLinkedinIn />, path: "" },
+  { icon: <FaGithub />, path: "https://github.com/MatiasDevop" },
+  {
+    icon: <FaLinkedinIn />,
+    path: "https://www.linkedin.com/in/nestor-matias-a-192436186/",
+  },
   { icon: <FaYoutube />, path: "" },
-  { icon: <FaTwitter />, path: "" },
+  { icon: <FaTwitter />, path: "https://x.com/NestorM2045" },
 ];
 
 const Social = ({
@@ -20,7 +23,13 @@ const Social = ({
     <div className={containerStyles}>
       {socials.map((item, index) => {
         return (
-          <Link key={index} href={item.path} className={iconStyles}>
+          <Link
+            key={index}
+            href={item.path}
+            className={iconStyles}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {item.icon}
           </Link>
         );
