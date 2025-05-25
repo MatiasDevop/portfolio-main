@@ -17,9 +17,9 @@ import {
   SiNextdotjs,
   SiDotnet,
   SiDocker,
-  SiAzuredevops,
   SiSonarcloud,
   SiSolidity,
+  SiAmazonroute53,
 } from "react-icons/si";
 
 // about data
@@ -184,8 +184,8 @@ const skills = {
       name: "AWS",
     },
     {
-      icon: <SiAzuredevops />,
-      name: "Azure DevOps",
+      icon: <SiAmazonroute53 />,
+      name: "Amazon Route 53",
     },
     {
       icon: <FaJira />,
