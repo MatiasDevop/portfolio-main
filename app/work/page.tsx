@@ -22,33 +22,70 @@ const projects = [
     category: "frontend",
     title: "project 1",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut totam officiis",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+      "Ecommerce website built with Next.js, Tailwind CSS, and TypeScript. It features a responsive design, product listings, and a shopping cart functionality.",
+    stack: [
+      { name: "Next JS" },
+      { name: "Tailwind CSS" },
+      { name: "Prisma" },
+      { name: "TypeScript" },
+      { name: "Stripe" },
+    ],
     image: "/assets/work/thumb1.png",
     live: "",
-    github: "",
+    github: "https://github.com/MatiasDevop/ecommerce-prisma",
   },
   {
     num: "02",
     category: "fullstack",
-    title: "project 2",
+    title: "Candidates Management System",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut totam officiis",
-    stack: [{ name: "Next js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
+      "Candidates Management System is a web application that allows users to manage candidates, interviews, and job postings, built with .Net Core, Following DDD principles, Clean Code and testing.",
+    stack: [
+      { name: ".Net Core" },
+      { name: "EF" },
+      { name: "DDD" },
+      { name: "Testing" },
+      { name: "Docker" },
+      { name: "SQL" },
+    ],
     image: "/assets/work/thumb2.png",
     live: "",
-    github: "",
+    github: "https://github.com/MatiasDevop/candidates-app",
   },
   {
     num: "03",
     category: "frontend",
-    title: "project 3",
+    title: "Ai Agent app",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut totam officiis",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
+      "AI Agent app is a web application that leverages artificial intelligence to provide personalized recommendations and insights. Built with Next.js and Tailwind CSS, it features a modern design and seamless user experience.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind.css" },
+      { name: "TypeScript" },
+      { name: "OpenAI API" },
+      { name: "LangChain" },
+      { name: "Vercel" },
+    ],
     image: "/assets/work/thumb3.png",
     live: "",
-    github: "",
+    github: "https://github.com/MatiasDevop/ai-agent-app",
+  },
+  {
+    num: "04",
+    category: "frontend",
+    title: "Nike web app",
+    description:
+      "Nike web app is a web application that provides a seamless shopping experience for users. Built with Next.js and Tailwind CSS, it features a modern design and responsive layout.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind.css" },
+      { name: "TypeScript" },
+
+      { name: "Vercel" },
+    ],
+    image: "/assets/work/thumb3.png",
+    live: "",
+    github: "https://github.com/MatiasDevop/nike-app",
   },
 ];
 
@@ -78,12 +115,12 @@ const Work = () => {
               </div>
               {/* project */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category}project
+                {project.category} project
               </h2>
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/* stack */}
-              <ul className="flex gap-4">
+              <ul className="flex gap-5 flex-wrap">
                 {project.stack.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">
@@ -113,7 +150,7 @@ const Work = () => {
                     </TooltipProvider>
                   </Link>
                   {/* github project button */}
-                  <Link href={project.github}>
+                  <Link href={project.github} target="_blank">
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
                         <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center">
