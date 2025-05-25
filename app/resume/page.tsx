@@ -9,6 +9,7 @@ import {
   FaAngular,
   FaAws,
   FaJira,
+  FaPython,
 } from "react-icons/fa";
 
 import {
@@ -18,6 +19,7 @@ import {
   SiDocker,
   SiAzuredevops,
   SiSonarcloud,
+  SiSolidity,
 } from "react-icons/si";
 
 // about data
@@ -196,6 +198,14 @@ const skills = {
     {
       icon: <TestTube />,
       name: "Testing",
+    },
+    {
+      icon: <SiSolidity />,
+      name: "Solidity",
+    },
+    {
+      icon: <FaPython />,
+      name: "Python",
     },
   ],
 };

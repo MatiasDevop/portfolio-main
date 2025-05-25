@@ -9,7 +9,7 @@ const services = [
     num: "01",
     title: "Web Development",
     description:
-      "Experienced Full Stack Developer with 4+ years building robust web applications using .NET for backend and Angular/React for frontend. Skilled in designing scalable solutions and delivering high-quality code.",
+      "Experienced Full Stack Developer with 8+ years building robust web applications using .NET for backend and Angular/React for frontend. Skilled in designing scalable solutions and delivering high-quality code.",
     href: "",
   },
   {
