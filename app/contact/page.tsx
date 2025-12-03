@@ -50,7 +50,7 @@ const Contact = () => {
           <div className="xl:h-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent">Let's work together</h3>
-              <p className="text-white/60">
+              <p className="text-neutral-600 dark:text-white/60">
                 If you have any questions or want to work together, feel free to
                 contact me. I will get back to you as soon as possible.
               </p>
@@ -96,7 +96,9 @@ const Contact = () => {
                       <div className="text-[28px]">{item.icon}</div>
                     </div>
                     <div className="flex-1">
-                      <p className="text-white/60">{item.title}</p>
+                      <p className="text-neutral-600 dark:text-white/60">
+                        {item.title}
+                      </p>
                       <h3 className="text-xl">{item.description}</h3>
                     </div>
                   </li>

@@ -71,13 +71,15 @@ const Services = () => {
                 </div>
                 {/* title */}
                 <h2
-                  className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all
+                  className="text-[42px] font-bold leading-none text-neutral-900 dark:text-white group-hover:text-accent transition-all
                 duration-500"
                 >
                   {service.title}
                 </h2>
                 {/* desciption */}
-                <p>{service.description}</p>
+                <p className="text-neutral-600 dark:text-white/80">
+                  {service.description}
+                </p>
                 {/* border */}
                 <div className="border-b border-white/20 w-full"></div>
               </div>

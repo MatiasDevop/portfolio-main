@@ -250,7 +250,7 @@ const Resume = () => {
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[600px] text-neutral-600 dark:text-white/60 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -268,7 +268,7 @@ const Resume = () => {
                           <div className="flex items-center gap-3 flex-1">
                             {/* dot */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60 md:text-base text-sm font-bold">
+                            <p className="text-neutral-600 dark:text-white/60 md:text-base text-sm font-bold">
                               {item.company}
                             </p>
                           </div>
@@ -283,7 +283,7 @@ const Resume = () => {
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[600px] text-neutral-600 dark:text-white/60 mx-auto xl:mx-0">
                   {education.description}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -301,7 +301,9 @@ const Resume = () => {
                           <div className="flex items-center gap-3 flex-1">
                             {/* dot */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.institution}</p>
+                            <p className="text-neutral-600 dark:text-white/60">
+                              {item.institution}
+                            </p>
                           </div>
                         </li>
                       );
@@ -314,7 +316,7 @@ const Resume = () => {
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <div>
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  <p className="max-w-[600px] text-neutral-600 dark:text-white/60 mx-auto xl:mx-0">
                     {skills.description}
                   </p>
                 </div>
@@ -347,7 +349,7 @@ const Resume = () => {
             >
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[600px] text-neutral-600 dark:text-white/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 mx-auto xl:mx-0">
@@ -357,7 +359,9 @@ const Resume = () => {
                         key={index}
                         className="flex flex-row items-center justify-center xl:justify-start gap-6"
                       >
-                        <span className="text-white/60">{item.fieldName}</span>
+                        <span className="text-neutral-600 dark:text-white/60">
+                          {item.fieldName}
+                        </span>
                         <span className="text-sm md:text-lg">
                           {item.fieldValue}
                         </span>

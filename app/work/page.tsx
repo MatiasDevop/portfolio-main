@@ -114,11 +114,13 @@ const Work = () => {
                 {project.num}
               </div>
               {/* project */}
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+              <h2 className="text-[42px] font-bold leading-none text-neutral-900 dark:text-white group-hover:text-accent transition-all duration-500 capitalize">
                 {project.category} project
               </h2>
               {/* project description */}
-              <p className="text-white/60">{project.description}</p>
+              <p className="text-neutral-600 dark:text-white/60">
+                {project.description}
+              </p>
               {/* stack */}
               <ul className="flex gap-5 flex-wrap">
                 {project.stack.map((item, index) => {
