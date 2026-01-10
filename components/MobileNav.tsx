@@ -44,11 +44,11 @@ const MobileNav = () => {
       <SheetTrigger className="flex justify-center items-center">
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
-      <SheetContent className="flex flex-col">
+      <SheetContent className="flex flex-col lg:h-[80vh]">
         {/* logo */}
         <SheetTitle></SheetTitle>
         <SheetDescription></SheetDescription>
-        <div className="mt-32 mb-40 text-center text-2xl">
+        <div className="mt-12 mb-40 text-center text-2xl">
           <Link href="/">
             <h1 className="text-4xl font-semibold text-neutral-900 dark:text-white">
               Mat<span className="text-accent">.</span>

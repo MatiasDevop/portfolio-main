@@ -259,7 +259,7 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-neutral-100 dark:bg-[#232329] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent">{item.duration}</span>
                           <h3 className="md:text-lg text-sm  min-h-[68px] text-center lg:text-left">
@@ -292,7 +292,7 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-neutral-100 dark:bg-[#232329] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent">{item.duration}</span>
                           <h3 className="text-lg  min-h-[68px] text-center lg:text-left">
@@ -326,8 +326,8 @@ const Resume = () => {
                       <li key={index}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex items-center justify-center">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300 hover:text-accent">
+                            <TooltipTrigger className="w-full h-[150px] bg-neutral-100 dark:bg-[#232329] rounded-xl flex items-center justify-center">
+                              <div className="text-6xl group-hover:text-accent transition-all duration-300 hover:text-accent text-neutral-900 dark:text-white">
                                 {skill.icon}
                               </div>
                             </TooltipTrigger>
