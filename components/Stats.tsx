@@ -25,7 +25,7 @@ const Stats = () => {
   return (
     <section>
       <div className="container mx-auto">
-        <div className="flex flex-wrap gap-6 max-w-[80vm] mx-auto xl:max-w-none">
+        <div className="flex flex-col md:flex-row gap-12 md:gap-6 max-w-[80vm] mx-auto xl:max-w-none justify-start items-center">
           {stats.map((item, index) => {
             return (
               <div
@@ -40,7 +40,7 @@ const Stats = () => {
                 />
                 <p
                   className={`${
-                    item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
+                    item.text.length < 15 ? "max-w-[100px]" : "max-w-[130px]"
                   } leading-snug text-neutral-600 dark:text-white/80`}
                 >
                   {item.text}
