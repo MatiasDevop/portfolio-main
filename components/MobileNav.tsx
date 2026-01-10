@@ -44,7 +44,7 @@ const MobileNav = () => {
       <SheetTrigger className="flex justify-center items-center">
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
-      <SheetContent className="flex flex-col lg:h-[80vh]">
+      <SheetContent className="flex flex-col lg:h-[80vh] overflow-auto">
         {/* logo */}
         <SheetTitle></SheetTitle>
         <SheetDescription></SheetDescription>
