@@ -8,13 +8,13 @@ import {
 } from "@/components/ui/tooltip";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { useState } from "react";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
-import Image from "next/image";
 import WorkSliderBtns from "@/components/WorkSliderBtns";
+import Image from "next/image";
 
 const projects = [
   {

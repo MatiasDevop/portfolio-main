@@ -1,9 +1,8 @@
 import Link from "next/link";
-import React from "react";
-import Nav from "./Nav";
-import { Button } from "./ui/button";
 import MobileNav from "./MobileNav";
+import Nav from "./Nav";
 import { ThemeToggle } from "./ThemeToggle";
+import { Button } from "./ui/button";
 
 export const Header = () => {
   return (

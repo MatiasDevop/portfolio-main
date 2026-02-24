@@ -1,7 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
+import { CiMenuFries } from "react-icons/ci";
 import {
   Sheet,
   SheetContent,
@@ -9,8 +10,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "./ui/sheet";
-import { CiMenuFries } from "react-icons/ci";
-import Link from "next/link";
 
 const links = [
   {

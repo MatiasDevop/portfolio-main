@@ -1,25 +1,25 @@
 "use client";
 
 import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaFigma,
   FaAngular,
   FaAws,
+  FaCss3,
+  FaFigma,
+  FaHtml5,
   FaJira,
+  FaJs,
   FaPython,
+  FaReact,
 } from "react-icons/fa";
 
 import {
-  SiTailwindcss,
-  SiNextdotjs,
-  SiDotnet,
-  SiDocker,
-  SiSonarcloud,
-  SiSolidity,
   SiAmazonroute53,
+  SiDocker,
+  SiDotnet,
+  SiNextdotjs,
+  SiSolidity,
+  SiSonarcloud,
+  SiTailwindcss,
 } from "react-icons/si";
 
 // about data

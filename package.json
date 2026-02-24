@@ -10,7 +10,8 @@
     "lint:fix": "biome lint --write .",
     "format:check": "biome format .",
     "format": "biome format --write .",
-    "test": "vitest"
+    "test": "vitest",
+    "knip": "knip"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.1",
@@ -42,6 +43,7 @@
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "jsdom": "^26.1.0",
+    "knip": "^5.85.0",
     "postcss": "^8",
     "postcss-load-config": "^6.0.1",
     "tailwindcss": "^4.2.1",

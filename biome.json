@@ -20,6 +20,10 @@
       "suspicious": {
         "noExplicitAny": "off",
         "noArrayIndexKey": "off"
+      },
+      "correctness": {
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error"
       }
     }
   },
