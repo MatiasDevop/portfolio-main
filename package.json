@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --write .",
+    "format:check": "biome format .",
+    "format": "biome format --write .",
     "test": "vitest"
   },
   "dependencies": {
@@ -29,18 +32,18 @@
     "react-icons": "^5.2.1",
     "swiper": "^11.1.9",
     "tailwind-merge": "^2.3.0",
-    "tailwindcss-animate": "^1.0.7",
     "vite-tsconfig-paths": "^5.1.2",
     "vitest": "^2.1.5"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@tailwindcss/postcss": "^4.2.1",
     "@types/node": "^20",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "eslint": "^8",
-    "eslint-config-next": "16.1.6",
+    "jsdom": "^26.1.0",
     "postcss": "^8",
+    "postcss-load-config": "^6.0.1",
     "tailwindcss": "^4.2.1",
     "typescript": "^5"
   },

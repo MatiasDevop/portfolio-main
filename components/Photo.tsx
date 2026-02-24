@@ -25,10 +25,10 @@ const Photo = () => {
           <Image
             src="/assets/image-mat1.png"
             priority
-            quality={100}
+            quality={75}
             fill
             alt=""
-            className=" object-cover"
+            className="object-cover"
           />
         </motion.div>
         {/* circle */}

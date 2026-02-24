@@ -22,7 +22,7 @@ const SelectTrigger = React.forwardRef<
       "flex h-[48px] w-full items-center justify-between rounded-md border px-4 py-5 text-base outline-none transition-colors",
       "bg-white text-neutral-900 border-neutral-200 placeholder:text-neutral-500 focus:border-accent",
       "dark:bg-primary dark:text-white/80 dark:border-white/10 dark:placeholder:text-white/40",
-      className
+      className,
     )}
     {...props}
   >
@@ -42,7 +42,7 @@ const SelectScrollUpButton = React.forwardRef<
     ref={ref}
     className={cn(
       "flex cursor-default items-center justify-center py-1",
-      className
+      className,
     )}
     {...props}
   >
@@ -59,7 +59,7 @@ const SelectScrollDownButton = React.forwardRef<
     ref={ref}
     className={cn(
       "flex cursor-default items-center justify-center py-1",
-      className
+      className,
     )}
     {...props}
   >
@@ -82,7 +82,7 @@ const SelectContent = React.forwardRef<
         "dark:border-slate-800 dark:bg-slate-950 dark:text-slate-50",
         position === "popper" &&
           "data-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1",
-        className
+        className,
       )}
       position={position}
       {...props}
@@ -92,7 +92,7 @@ const SelectContent = React.forwardRef<
         className={cn(
           "p-1",
           position === "popper" &&
-            "h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)]"
+            "h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)]",
         )}
       >
         {children}
@@ -126,7 +126,7 @@ const SelectItem = React.forwardRef<
       "focus:bg-accent focus:text-primary",
       "data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
       "dark:focus:bg-slate-800 dark:focus:text-slate-50",
-      className
+      className,
     )}
     {...props}
   >
@@ -141,18 +141,6 @@ const SelectItem = React.forwardRef<
 ));
 SelectItem.displayName = SelectPrimitive.Item.displayName;
 
-const SelectSeparator = React.forwardRef<
-  React.ElementRef<typeof SelectPrimitive.Separator>,
-  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Separator>
->(({ className, ...props }, ref) => (
-  <SelectPrimitive.Separator
-    ref={ref}
-    className={cn("-mx-1 my-1 h-px bg-slate-100 dark:bg-slate-800", className)}
-    {...props}
-  />
-));
-SelectSeparator.displayName = SelectPrimitive.Separator.displayName;
-
 export {
   Select,
   SelectGroup,
@@ -161,7 +149,4 @@ export {
   SelectContent,
   SelectLabel,
   SelectItem,
-  SelectSeparator,
-  SelectScrollUpButton,
-  SelectScrollDownButton,
 };

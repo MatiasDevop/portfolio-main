@@ -1,7 +1,6 @@
 {
-    "name": "ExampleToken",
-    "symbol": "EXT",
-    "description": "This is an example token with an embedded Base64 image.",
-    "image": "https://raw.githubusercontent.com/MatiasDevop/portfolio-main/refs/heads/master/public/assets/resume/cap.svg"
+  "name": "ExampleToken",
+  "symbol": "EXT",
+  "description": "This is an example token with an embedded Base64 image.",
+  "image": "https://raw.githubusercontent.com/MatiasDevop/portfolio-main/refs/heads/master/public/assets/resume/cap.svg"
 }
-  

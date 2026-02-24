@@ -1,6 +1,6 @@
 # Refactoring
 
-- Update all dependencies to the latest versions.
+-[x] Update all dependencies to the latest versions.
   - Codemods for Nextjs / Tailwind / React / etc. //Look in Next docs to upgrade v16
   - tailwind 3 -> 4 // looks for codemods 
 - Clean up unsed dependencies and code.
