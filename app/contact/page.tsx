@@ -44,10 +44,10 @@ const Contact = () => {
       }}
       className="py-6"
     >
-      <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row gap-[30px]">
+      <div className="page-container">
+        <div className="flex flex-col xl:flex-row gap-7.5">
           {/* form */}
-          <div className="xl:h-[54%] order-2 xl:order-none">
+          <div className="xl:h-[54%] order-2 xl:order-0">
             <form className="flex flex-col gap-6 p-10 bg-neutral-100 dark:bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-neutral-600 dark:text-white/60">

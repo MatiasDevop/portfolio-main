@@ -3,12 +3,12 @@
 -[x] Update all dependencies to the latest versions.
   - Codemods for Nextjs / Tailwind / React / etc. //Look in Next docs to upgrade v16
   - tailwind 3 -> 4 // looks for codemods 
-- Clean up unsed dependencies and code.
+-[x] Clean up unsed dependencies and code.
   - `Knip` for finding unused code paths
-- Move to Biome for formatting and linting.
+-[x] Move to Biome for formatting and linting.
   - Delete eslint
 
-- Move to pnpm for package management.
+- [x] Move to pnpm for package management.
   - Delete package-lock.json and node_modules
   - Add pnpm-lock.yaml
   - Update all scripts to use pnpm instead of npm

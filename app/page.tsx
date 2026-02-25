@@ -7,15 +7,15 @@ import { FiDownload } from "react-icons/fi";
 export default function Home() {
   return (
     <section className="h-full">
-      <div className="container mx-auto h-full">
+      <div className="page-container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
-          <div className="text-center xl:text-left order-2 xl:order-none">
+          <div className="text-center xl:text-left order-2 xl:order-0">
             <span>Software full-stack developer</span>
-            <h1 className="h1">
+            <h1 className="lg:text-7xl text-2xl font-bold">
               Hello I'm <br /> <span>Nestor Matias</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-neutral-600 dark:text-white/80">
+            <p className="max-w-125 mb-9 text-neutral-600 dark:text-white/80">
               I excel at crafting elegant digital experiences and i am
               proficient in vaious programing languages and technologies
             </p>
@@ -39,7 +39,7 @@ export default function Home() {
             </div>
           </div>
           {/* photo */}
-          <div className="order-1 xl:order-none mb-8 xl:mb-0">
+          <div className="order-1 xl:order-0 mb-8 xl:mb-0">
             <Photo />
           </div>
         </div>

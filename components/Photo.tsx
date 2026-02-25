@@ -20,7 +20,7 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-exclusion absolute "
+          className="w-74.5 h-74.5 xl:w-124.5 xl:h-124.5 mix-blend-exclusion absolute "
         >
           <Image
             src="/assets/image-mat1.png"
@@ -29,6 +29,7 @@ const Photo = () => {
             fill
             alt=""
             className="object-cover"
+            sizes="(min-width: 1200px) 498px, 298px"
           />
         </motion.div>
         {/* circle */}
