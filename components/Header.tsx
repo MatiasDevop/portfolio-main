@@ -1,14 +1,13 @@
 import Link from "next/link";
-import React from "react";
-import Nav from "./Nav";
-import { Button } from "./ui/button";
 import MobileNav from "./MobileNav";
+import Nav from "./Nav";
 import { ThemeToggle } from "./ThemeToggle";
+import { Button } from "./ui/button";
 
 export const Header = () => {
   return (
     <header className="py-8 xl:py-12 text-neutral-900 dark:text-white">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="page-container mx-auto flex justify-between items-center">
         {/* logo */}
         <Link href="/">
           <h1 className="text-4xl font-semibold">

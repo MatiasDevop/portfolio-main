@@ -1,6 +1,40 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-primary: var(--font-jetbrainsMono);
+
+  --color-primary: #1c1c22;
+  --color-accent: #00ff99;
+  --color-accent-hover: #00e187;
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 960px;
+  --breakpoint-xl: 1200px;
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
 
 @layer base {
   body {
@@ -15,19 +49,19 @@
   .h3 {
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
   }
-  .text-outline{
+  .text-outline {
     -webkit-text-stroke: 1px #000000;
   }
-  
-  .text-outline-hover{
+  .text-outline-hover {
     -webkit-text-stroke: 1px #00ff99;
   }
-
-  /* Dark mode overrides for outline text used in Services numbers */
-  .dark .text-outline{
+  .dark .text-outline {
     -webkit-text-stroke: 1px #ffffff;
   }
-  .dark .text-outline-hover{
+  .dark .text-outline-hover {
     -webkit-text-stroke: 1px #00ff99;
+  }
+  .page-container {
+    @apply mx-auto w-full max-w-312.5 px-4 md:px-6 lg:px-8;
   }
 }

@@ -1,25 +1,25 @@
 "use client";
 
 import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaFigma,
   FaAngular,
   FaAws,
+  FaCss3,
+  FaFigma,
+  FaHtml5,
   FaJira,
+  FaJs,
   FaPython,
+  FaReact,
 } from "react-icons/fa";
 
 import {
-  SiTailwindcss,
-  SiNextdotjs,
-  SiDotnet,
-  SiDocker,
-  SiSonarcloud,
-  SiSolidity,
   SiAmazonroute53,
+  SiDocker,
+  SiDotnet,
+  SiNextdotjs,
+  SiSolidity,
+  SiSonarcloud,
+  SiTailwindcss,
 } from "react-icons/si";
 
 // about data
@@ -233,7 +233,7 @@ const Resume = () => {
       }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
-      <div className="container mx-auto">
+      <div className="page-container mx-auto">
         <Tabs
           defaultValue="experience"
           className="flex flex-col xl:flex-row gap-[60px]"
