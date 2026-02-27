@@ -6,8 +6,14 @@ import { FiDownload } from "react-icons/fi";
 
 export default function Home() {
   return (
-    <section className="h-full">
-      <div className="page-container mx-auto h-full">
+    <section className="relative h-full overflow-hidden">
+      {/* full-bleed background grid that fades out at the edges */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px] bg-position-[0_15px] mask-[radial-gradient(circle_at_50%_65%,black_55%,transparent_100%)] [\-webkit-mask-image:radial-gradient(circle_at_50%_65%,black_55%,transparent_100%)]"
+      />
+
+      <div className="page-container relative mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-0">
