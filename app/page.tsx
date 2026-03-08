@@ -22,8 +22,8 @@ export default function Home() {
               Hello I'm <br /> <span>Nestor Matias</span>
             </h1>
             <p className="max-w-125 mb-9 text-neutral-600 dark:text-white/80">
-              I excel at crafting elegant digital experiences and i am
-              proficient in vaious programing languages and technologies
+              I excel at crafting elegant digital experiences and I am
+              proficient in various programming languages and technologies
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
