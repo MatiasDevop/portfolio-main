@@ -89,10 +89,12 @@ const projects = [
   },
 ];
 
+import type { Swiper as SwiperType } from "swiper";
+
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
 
-  const handleSlideChange = (swiper: any) => {
+  const handleSlideChange = (swiper: SwiperType) => {
     // get current slide index
     const currentIndex = swiper.activeIndex;
     // update project state based on current slide index
@@ -139,27 +141,29 @@ const Work = () => {
                 {/* button */}
                 <div className="flex items-center gap-4">
                   {/* live project button */}
-                  <Link href={project.live}>
-                    <TooltipProvider delayDuration={100}>
-                      <Tooltip>
-                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center">
-                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>Live Project</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
-                  </Link>
+                  {project.live && (
+                    <Link href={project.live} target="_blank" rel="noopener noreferrer">
+                      <TooltipProvider delayDuration={100}>
+                        <Tooltip>
+                          <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center">
+                            <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p>Live Project</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </Link>
+                  )}
                   {/* github project button */}
-                  <Link href={project.github} target="_blank">
+                  <Link href={project.github} target="_blank" rel="noopener noreferrer">
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
                         <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center">
                           <BsGithub className="text-white text-3xl group-hover:text-accent" />
                         </TooltipTrigger>
                         <TooltipContent>
-                          <p>Live Project</p>
+                          <p>Github Repository</p>
                         </TooltipContent>
                       </Tooltip>
                     </TooltipProvider>
@@ -187,7 +191,7 @@ const Work = () => {
                           src={project.image}
                           fill
                           className="object-cover"
-                          alt=""
+                          alt={project.title}
                         />
                       </div>
                     </div>
@@ -196,7 +200,7 @@ const Work = () => {
               })}
               {/* slider buttons */}
               <WorkSliderBtns
-                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
+                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-start"
                 btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
               />
             </Swiper>

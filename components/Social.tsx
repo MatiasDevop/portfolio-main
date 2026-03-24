@@ -15,24 +15,26 @@ const Social = ({
   containerStyles,
   iconStyles,
 }: {
-  containerStyles: any;
-  iconStyles: any;
+  containerStyles: string;
+  iconStyles: string;
 }) => {
   return (
     <div className={containerStyles}>
-      {socials.map((item, index) => {
-        return (
-          <Link
-            key={index}
-            href={item.path}
-            className={iconStyles}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {item.icon}
-          </Link>
-        );
-      })}
+      {socials
+        .filter((item) => item.path !== "")
+        .map((item, index) => {
+          return (
+            <Link
+              key={index}
+              href={item.path}
+              className={iconStyles}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {item.icon}
+            </Link>
+          );
+        })}
     </div>
   );
 };

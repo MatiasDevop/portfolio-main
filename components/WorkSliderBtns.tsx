@@ -3,7 +3,17 @@
 import { PiCaretLeftBold, PiCaretRightBold } from "react-icons/pi";
 import { useSwiper } from "swiper/react";
 
-const WorkSliderBtns = ({ containerStyles, btnStyles, iconStyles }: any) => {
+interface WorkSliderBtnsProps {
+  containerStyles: string;
+  btnStyles: string;
+  iconStyles?: string;
+}
+
+const WorkSliderBtns = ({
+  containerStyles,
+  btnStyles,
+  iconStyles,
+}: WorkSliderBtnsProps) => {
   const swiper = useSwiper();
 
   return (

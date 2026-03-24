@@ -27,7 +27,7 @@ const Photo = () => {
             priority
             quality={75}
             fill
-            alt=""
+            alt="Nestor Matias - Full Stack Developer"
             className="object-cover"
             sizes="(min-width: 1200px) 498px, 298px"
           />

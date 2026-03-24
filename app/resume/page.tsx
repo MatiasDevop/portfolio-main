@@ -1,5 +1,16 @@
 "use client";
 
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { motion } from "framer-motion";
+import { TestTube } from "lucide-react";
+
 import {
   FaAngular,
   FaAws,
@@ -49,7 +60,7 @@ const about = {
       fieldValue: "nestorblr_11@hotmail.com",
     },
     {
-      fieldName: "Frelance",
+      fieldName: "Freelance",
       fieldValue: "Available",
     },
     {
@@ -169,7 +180,7 @@ const skills = {
     },
     {
       icon: <SiDotnet />,
-      name: ".Net Mircrosoft",
+      name: ".NET Microsoft",
     },
     {
       icon: <SiDocker />,
@@ -209,19 +220,6 @@ const skills = {
     },
   ],
 };
-
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { motion } from "framer-motion";
-import { TestTube } from "lucide-react";
 
 const Resume = () => {
   return (

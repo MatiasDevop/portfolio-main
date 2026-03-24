@@ -56,10 +56,10 @@ const Contact = () => {
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
+                <Input type="text" placeholder="Firstname" />
+                <Input type="text" placeholder="Lastname" />
                 <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" />
+                <Input type="tel" placeholder="Phone number" />
               </div>
               {/* select */}
               <Select>

@@ -36,7 +36,6 @@ const links = [
 
 const MobileNav = () => {
   const pathname = usePathname();
-  console.log("path///////", pathname);
 
   return (
     <Sheet>
